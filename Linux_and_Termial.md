@@ -194,4 +194,57 @@
 >>>>student@ssps:~$ 
 >>>>```
 >>- **pwd**
->>>- pwd neboli **p**rint **w**orking **d**irectory, nám zbrazí absolutní cestu aktuálníjo adresáře
+>>>- pwd neboli **p**rint **w**orking **d**irectory, nám zobrazí absolutní cestu aktuálního adresáře
+>>>- Ukázka:
+>>>>```bash
+>>>>student@ssps:~$ pwd
+>>>>/home/student/
+>>>>
+>>>>student@ssps:~$ 
+>>>>```
+>>- **nano/micro/vim** (textové editory)
+>>>- Textové editory nám pomáhají upravovat čisté **UTF8/ASCII** soubory, mají speciální funkce, podle toho, které využijeme
+>>>- Nano je nejjednodušší pro uživatele na pochopení a využití.
+>>>- #humor Vim je považován jako nerdovský text editor a uctívá se
+>>>- Ukázka:
+>>>>```bash
+>>>>~
+>>>>~
+>>>>~
+>>>>~
+>>>>~
+>>>>~
+>>>>~
+>>>>~
+>>>>:                                                    0,0-1  All
+>>>>```
+>>- **grep**
+>>>- grep neboli **g**lobal **r**egular **e**xpression **p**rint, nám vyhledá specifický string v souboru
+>>>- Argumenty:
+>>>>- **-r** (rekurzivní) =  vyhledá i v podsložkách
+>>>>- **-i** (ignoruje kapitalizaci) = ignoruje, zda je písmeno velké, či malé
+>>>>- **-E** (regulérní exprese - regex) = pomocí tohoto argumentu nemusíme hledat string, ale regex
+>>>>- Mnoho dalších
+>>- **chmod**
+>>>- chmod neboli **ch**ange **mod**e, nám změní oprávnění složky nebo souboru
+>>>- Příklady použití:
+>>>>- chmod 764 soubor -> nastaví práva rwx pro majitele, rw-pro skupinu a r-- pro ostatní
+>>>>- chmod u+rwx,g+rw,o+r soubor -> vykoná totéž jako předchozí příklad
+>>- **chown**
+>>>- chown neboli **ch**ange **own**ership, nám změní majitele souboru/složky
+>>- **wget**
+>>>- Používá se k nahrávání nebo stahování dat z nebo na server.
+>>>- Zabudované rekurzivní stahování
+>>>- Je vysoce konfigurovatelný
+>>- **curl**
+>>>- Stahuje souborů z internetu
+>>>- Oproti wget podporuje více protokolů, avšak je méně konfigurovatelnější
+>>- **file**
+>>>- Používá **magic numbers** na zjištění typu souboru
+>>>- Ukázka: 
+>>>> ```
+>>>> student@ssps:~$ file word-dokument.docx
+>>>> word-dokument.docx: Microsoft Word 2007+
+>>>>
+>>>>student@ssps:~$ 
+>>>> ```
