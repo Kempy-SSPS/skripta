@@ -98,8 +98,15 @@
 # Terminál
 >- Terminál je program (ve windows známý jako command prompt), ve kterém spouštíme shell.
 >- Shell je interpreter příkazů pro kernel, zvládne udělat všechno co jde udělat skrze normální aplikaci.
-
+>- V terminálu můžeme používat shell redirection, což je způsob, jak v terminálu zacházet s daty
+>> - Piping
+>>> Při pipingu se používá operátor `|`, který přesměruje výstup jednoho příkazu do jiného
+>>- Writing
+>>> Pokud chceme zapsat výstup příkazu do souboru, můžeme použít operátor `>` a za něj napsat jméno souboru. Pokud už soubor existuje, přepíše ho.
+>>- Appending
+>>>Dělá to samé jako writing, ale když použijete operátor `>>` se jménem souboru, který už existuje, tak výstup přidá na konec existu
 ---
+
 # Příkazy v terminálu
 >- Jestli chcete používat Linux, tak je dobré znát nějaké základní příkazy, které budete používat na denní bázi.
 >- K příkazům můžeme přidat i argumenty (v <>), které přidávají doplňující informaci a nastavení příkazu.
