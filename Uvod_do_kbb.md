@@ -42,7 +42,7 @@ d) poloprezidentská republika
 - ransomware - vyděračský malwaru, který zašifruje obsah disku napadeného zařízení a vyžaduje od oběti uhrazení výkupného 
 - spyware - získává data o činnosti uživatele např. záznamem stisknutých kláves (keylogger) nebo pořizováním snímků obrazovky (screenlogger) 
 
-    ![příklad adwaru na pc s OS Windows XP](https://www.startpage.com/av/proxy-image?piurl=http%3A%2F%2Fenglish474awe.weebly.com%2Fuploads%2F4%2F7%2F1%2F0%2F4710028%2F7256363.jpg%3F341&sp=1709377217T53a17d2c34194c61da0b655670d765df82d7cf3de7d2ba702aff97590031355c)
+    ![příklad adwaru na pc s OS Windows XP](https://cdn.ttgtmedia.com/rms/onlineImages/security-adware_mobile.jpg)
 
 ## Analýza malwaru
 - dynamická - analýza chování malwaru při spuštění a běhu v izolovaném a monitorovaném prostředí
@@ -51,7 +51,7 @@ d) poloprezidentská republika
 - VirusTotal (statická analýza)
 - Any.run (dynamická analýza)
 
-    ![příklad statické analýzy Malwaru pomocí nástroje Virustotal](https://kb.stuckinvim.com/assets/static_analysis.png)
+    ![příklad statické analýzy Malwaru pomocí nástroje Virustotal](image.png)
 
 
 
@@ -66,7 +66,7 @@ d) poloprezidentská republika
 - způsob manipulace lidí za účelem provedení určité akce nebo získání určité informace
 - phishing - příklad social engineeringu, internetový podvod (podvodné maily) používaný k získávání citlivých údajů
 
-    ![příklad phishingu](https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Foptima-systems.co.uk%2Fwp-content%2Fuploads%2F2019%2F07%2Fblog_content-phishing-email-from-amazon.png&sp=1709385767T2879431f244a5fca1efca26ab5b7640f953cd803311837b41f4ed97fd6898fbb)
+    ![příklad phishingu](https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/how_to_spot_amazon_phishing_emails_academy/img-01.png?width=1303&name=img-01.png)
 
 
 # OSINT
