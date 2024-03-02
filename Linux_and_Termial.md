@@ -76,7 +76,7 @@
 >>"r,w,x
 >> 4,2,1" - Nathan
 
----
+
 # Distribuce
 - Každý kdo někdy používal Linux pozná některé známé distribuce jako Ubuntu, Debian nebo Arch. Existují stovky různých distribucí a každý si najde vlastní, která mu sedne.
 - Vzhledem k tomu, že Linux je pouze jádro a instalace softwaru je náročná pro uživatele, využíváme tzv. package managery (apt, pacman, dnf).
@@ -84,7 +84,7 @@
 - Z tohoto důvodu je potřeba si vybrat distribuci, která se nám líbí. (nebo kvůli sociálnímu statutu, např. arch uživatelé)
 - Distribuce jsou verze Linuxu s předinstalovanými a přednastavenými nástroji a aplikacemi.
 
----
+
 # Instalace
 - Pokud nechceme instalovat Linux, nebo jiný operační systém přímo na náš počítač, je možné ho virtualizovat, k tomu nám pomohou programy jako je **VMware**  a **VirtualBox**.
 - Instalace je rozdílná podle distribuce, kterou jsme si vybrali.
@@ -93,7 +93,7 @@
 >- Rozdělení disku na oddíly – swap, root, boot
 >- **Swap** = oddíl na disku, který se používá při zaplněnífyzické paměti RAM, ve windows známé jako pagefile
 
----
+
 # Terminál
 - Terminál je program (ve windows známý jako command prompt), ve kterém spouštíme shell.
 - Shell je interpreter příkazů pro kernel, zvládne udělat všechno co jde udělat skrze normální aplikaci.
