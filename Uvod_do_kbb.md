@@ -51,7 +51,7 @@ d) poloprezidentská republika
 - VirusTotal (statická analýza)
 - Any.run (dynamická analýza)
 
-    ![příklad statické analýzy Malwaru pomocí nástroje Virustotal](/assets/static_analysis.png)
+    ![příklad statické analýzy Malwaru pomocí nástroje Virustotal](https://kb.stuckinvim.com/assets/static_analysis.png)
 
 
 
