@@ -77,7 +77,7 @@ d) poloprezidentská republika
 ## Příklady Google dorkingu
 - níže přehled pár příkladů google dorkingu, existuje jich však daleko více, stačí si vyhledat Google dorking
 ```
-	inurl:ssps.cz ext:pdf
-    intitle:"Index of" wp-admin
-    filename:config.php dbpasswd
+inurl:ssps.cz ext:pdf
+intitle:"Index of" wp-admin
+filename:config.php dbpasswd
 ```
