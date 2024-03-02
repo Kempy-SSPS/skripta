@@ -25,7 +25,7 @@ d) poloprezidentská republika
 - whitehat = identifikuje a opravuje zranitelnosti a jedná tak **se svolením** nebo na žádost organizace, do jejíž systémů se nabourává (také nazýváni jako etičtí hackeři)
 - grayhat = hacker, který nemá kriminální nebo zlovolné úmysly jako blackhat, ale také nemá předchozí vědomí nebo souhlas těch, do jejichž systémů se nabourává
 - blackhat = **kyberzločinec**, který se nelegálně snaží nabourat do systémů se zlým nebo kriminálním úmyslem
-## Týmy entických hackerů
+## Týmy etických hackerů
 - red team - útočící tým (hledání zranitelností s cílem dostat se do systému)
 - blue team - obraný tým (forenzní analýza, monitorování sítě atd.)
 - purple team - tým řešící komunikaci mezi red a blue týmem
