@@ -51,7 +51,6 @@
     └── tmp/
 ```
 
----
 # Jak fungují soubory v Linuxu?
 ## Rozlišování soborů
 - Ve Windows se typy souborů určují podle přípon (.png, .jpg...).
