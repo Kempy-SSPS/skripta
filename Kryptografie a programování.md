@@ -74,7 +74,7 @@ Jinak:
 	```
 
 - Nyní si zkusíme vytvořit velmi jednoduchý C# program, který bude zdravit uživatele
-	 - **//** = Značí komentář
+	 - **//** = V C# značí komentář
 
 ```c
 Console.WriteLine("Zadej své jméno: "); //Požádá uživatele o zadání jména
