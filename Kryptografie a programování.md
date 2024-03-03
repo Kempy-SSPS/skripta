@@ -58,9 +58,13 @@ Jinak:
 - **Datové typy** - každý programovací jazyk má v sobě zabudované základní datové typy, mezi nejzákladnější patří:
 
 	int - celá čísla
+
 	double - desetinná čísla
+
 	string - textové řetězce
+
 	char - jeden znak
+
 	bool - true/false
 
 - **Syntaxe** - každý programovací jazyk má svou syntaxi, jedná se o sadu pravidel, při jejímž porušení nebude program fungovat. Například v programovacím jazyce C# vše musí končit ";" takže jednoduchý příkaz na vypsání textu do konzole bude vypadat takto:
