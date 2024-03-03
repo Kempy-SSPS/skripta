@@ -27,7 +27,7 @@ d) poloprezidentská republika
 - blackhat = **kyberzločinec**, který se nelegálně snaží nabourat do systémů se zlým nebo kriminálním úmyslem
 ## Týmy etických hackerů
 - red team - útočící tým (hledání zranitelností s cílem dostat se do systému)
-- blue team - obraný tým (forenzní analýza, monitorování sítě atd.)
+- blue team - obranný tým (forenzní analýza, monitorování sítě atd.)
 - purple team - tým řešící komunikaci mezi red a blue týmem
 
 
@@ -75,7 +75,7 @@ d) poloprezidentská republika
 - shodan.io - vyhledávač pro zařízení připojená k internetu
 - Google dorking - technika, která využívá pokročilé vyhledávací operátory k odhalení informací na internetu, které nemusí být snadno dostupné
 ## Příklady Google dorkingu
-- níže přehled pár příkladů google dorkingu, existuje jich však daleko více, stačí si vyhledat Google dorking
+- níže přehled pár příkladů Google dorkingu, existuje jich však daleko více, stačí si vyhledat Google dorking
 ```
 inurl:ssps.cz ext:pdf
 intitle:"Index of" wp-admin
