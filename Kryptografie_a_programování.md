@@ -3,7 +3,7 @@
 ### Co to je kryptografie?
 - Kryptografie je obor, jenž se zabývá šifrováním. V kontextu kybernetické bezpečnosti se využívá k ochraně dat a to tak, že data zašifruje dle vybraného algoritmu.
 ---
-## Šifrování vs Kodovani
+## Šifrování vs Kódování
 - Obojí je transformace dat do jiné podoby, avšak ačkoliv se to tak může zdát, opravdu se nejedná o stejnou věc.
 
 ### Šifrování
