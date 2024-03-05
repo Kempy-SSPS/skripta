@@ -91,7 +91,7 @@
 - Pokud budeme instalovat systém s automatizovaným instalačním procesem (cokoliv kromě **Arch Linuxu** apod.), tak se nás bude ptát na následující věci:
 >- Uživatele a jejich hesla
 >- Rozdělení disku na oddíly – swap, root, boot
->- **Swap** = oddíl na disku, který se používá při zaplněnífyzické paměti RAM, ve windows známé jako pagefile
+>- **Swap** = oddíl na disku, který se používá při zaplnění fyzické paměti RAM, ve windows známé jako pagefile
 
 
 # Terminál
