@@ -1,51 +1,51 @@
 # Kryptografie
+- Obor zabývající se šifrováním
+- V kontextu kybernetické bezpečnosti se využívá k ochraně dat a to tak, že data zašifruje dle vybraného algoritmu
 
-### Co to je kryptografie?
-- Kryptografie je obor, jenž se zabývá šifrováním. V kontextu kybernetické bezpečnosti se využívá k ochraně dat a to tak, že data zašifruje dle vybraného algoritmu.
----
 ## Šifrování vs Kodovani
-- Obojí je transformace dat do jiné podoby, avšak ačkoliv se to tak může zdát, opravdu se nejedná o stejnou věc.
+- Oboje transformace dat do jiné podoby
+- Ačkoliv se to tak může zdát, opravdu se nejedná o stejnou věc
 
-### Šifrování
-- Pro přeměnu dat je využíván klíč, který dle druhu algoritmu může být bud symetrický nebo asymetrický.
-	- **Symetrický** -  jeden klíč pro šifrování a dešifrování - příklady symetrických algoritmů: AES, Caesarova šifra, Vigenerova šifra
-	- **Asymetrický** - 2 klíče, veřejný a soukromý - příklady asymetrických algoritmů: RSA, Lizard, ECC
+## Šifrování
+- Pro přeměnu dat využíván klíč
+- Klíč je dle druhu algoritmu buď symetrický nebo asymetrický
+	- **Symetrický**
+    	- Jeden klíč pro šifrování a dešifrování
+    	- Příklady symetrických algoritmů: AES, Caesarova šifra, Vigenèrova šifra
+	- **Asymetrický**
+    	- 2 klíče, veřejný a soukromý
+    	- Příklady asymetrických algoritmů: RSA, Lizard, ECC
 
-### Kódování
-- Jedná se o přepsání dat do jiné podoby pomocí vybraného algoritmu. při kódování nepotřebujete zadávat žádný klíč a proto případně velmi jednoduché zjistit, co bylo původním obsahem.
-
-- Takto vypadá text "SSPS" zakódovaný pomocí algoritmu Base64 
+## Kódování
+- Přepsání dat do jiné podoby pomocí vybraného algoritmu
+- Při kódování nepotřebujete zadávat žádný klíč -> je velmi jednoduché zjistit původní obsah
+- Text "SSPS" zakódovaný pomocí algoritmu Base64:
 
 	```
 	U1NQUw==
 	```
 
+- Nástroje pro kódování a dekódování: 
+    - https://gchq.github.io/CyberChef/
+    - https://www.dcode.fr/en
 
-
-- Text si můžete zkusit dekódovat pomocí nástroje CyberChef, jenž je dostupný na adrese: 
-	https://gchq.github.io/CyberChef/
-
-- Případně si můžete zkusit zakódovat nějaký svůj text.
-
----
 
 ## Hashování
-- Jednotná přeměna dat dle předem stanoveného algoritmu. Jedná se tvz o “Otisk prstu” pro data. Hash je neměnný a bude vždy stejný. Všechno má svůj vlastní hash. Jde díky němu ověřovat integritu dat. Příklady hashovacích algortimů: MD5, SHA512, Blake2
-- Hash nelze "dešifrovat", ale lze ho prolomit pomocí takzvaných "rainbow tables", jejichž princip spočívá v tom, že máte dlouhý seznam slov, které zahashujete a výsledný hash porovnáváte s tím, který se snažíte prolomit. Pokud budete mít shodu, tak jste slovo prolomili.
+- Jednotná přeměna dat dle předem stanoveného algoritmu
+- Jedná se tzv. o “Otisk prstu” dat
+- Neměnný a uinikátní
+- Příklady hashovacích algortimů: MD5, SHA512, Blake2
+- Příklady využití: TODO
+- Nelze "dešifrovat", ale lze ho prolomit pomocí takzvaných "rainbow tables", jejichž princip spočívá v tom, že máte dlouhý seznam slov, které zahashujete a výsledný hash porovnáváte s tím, který se snažíte prolomit. Pokud budete mít shodu, tak jste slovo prolomili.
 
 - Příklad hashe MD5: ```769ef95f8741c399409e69b409e7f808```
 - Hash jako takový sám o sobě nelze dešifovat, můžete ho však prolomit pomocí "rainbow tables", o kterých se zmiňuji výše. Nástroj, tuto možnost prolomení pomocí rainbow tables nabízí je je dostupný i ve webovém prostředí je například https://crackstation.net/
 - Při zadání výše zmíněného MD5 hashe zjistíte, že pod hashem se krývá slovo "SSPS".
 
 
----
-
-### Programování
-- V této části probereme základy programování
-
+# Programování
 - **Algoritmizace** - velmi důležitá v programování je algoritmizace. Jedná se o sadu pokynů, kterými se program řídí. Bez schopnosti tvorby algoritmů nemůžeme napsat kvalitní kód.
-
-- jednoduchý algoritmus napsaný v "pseudokódu"
+- jednoduchý algoritmus napsaný v "pseudokódu":
 ```bash
 Vstup: heslo
 Pokud heslo == 1234:
@@ -53,7 +53,6 @@ Pokud heslo == 1234:
 Jinak:
     Vypiš "Špatné heslo"
 ```
-
 
 - **Datové typy** - každý programovací jazyk má v sobě zabudované základní datové typy, mezi nejzákladnější patří:
 
@@ -67,16 +66,16 @@ Jinak:
 
 	bool - true/false
 
-- **Syntaxe** - každý programovací jazyk má svou syntaxi, jedná se o sadu pravidel, při jejímž porušení nebude program fungovat. Například v programovacím jazyce C# vše musí končit ";" takže jednoduchý příkaz na vypsání textu do konzole bude vypadat takto:
+- **Syntaxe** - sada pravidel, při jejímž porušení nebude program fungovat. Například v programovacím jazyce C# vše musí končit ";" takže jednoduchý příkaz na vypsání textu do konzole bude vypadat takto:
 
-	```c
+	```c#
 	Console.WriteLine("Hello world");
 	```
 
 - Nyní si zkusíme vytvořit velmi jednoduchý C# program, který bude zdravit uživatele
 	 - **//** = V C# značí komentář
 
-```c
+```c#
 Console.WriteLine("Zadej své jméno: "); //Požádá uživatele o zadání jména
 string name = Console.ReadLine(); //Načte jméno do proměnné name
 Console.WriteLine("Ahoj " + name); //Napíše "Ahoj " a obsah proměnné name
@@ -92,7 +91,7 @@ print("Ahoj " + name)
 
 - Toto je velmi jednoduchý program, který pozdraví uživatele. Nyní si vytvoříme kalkulačku ve které si představíme funkci while a if
 
-```c
+```c#
 while (true) //Program se bude stále opakovat
 {
     Console.WriteLine("Kalkulačka V1");

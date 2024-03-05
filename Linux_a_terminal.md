@@ -1,4 +1,3 @@
-
 # Co je to GNU/Linux?
  ## Linux
 - Linux je jenom jádro systému (**kernel** = low level jádro systému, který nám umožnuje komunikovat s hardwarem), zprostředkovává rozhraní mezi hardwarem a dalšími programy a poskytuje nad nimi úroveň abstrakce.
