@@ -1,6 +1,6 @@
 # Kryptografie
 - Obor zabývající se šifrováním
-- V kontextu kybernetické bezpečnosti se využívá k ochraně dat a to tak, že data zašifruje dle vybraného algoritmu
+- V kontextu kybernetické bezpečnosti využívána k ochraně dat - zašifrování dle vybraného algoritmu
 
 ## Šifrování vs Kodovani
 - Oboje transformace dat do jiné podoby
@@ -8,18 +8,18 @@
 
 ## Šifrování
 - Pro přeměnu dat využíván klíč
-- Klíč je dle druhu algoritmu buď symetrický nebo asymetrický
+- Klíč dle druhu algoritmu buď symetrický nebo asymetrický
 	- **Symetrický**
     	- Jeden klíč pro šifrování a dešifrování
     	- Příklady symetrických algoritmů: AES, Caesarova šifra, Vigenèrova šifra
 	- **Asymetrický**
-    	- 2 klíče, veřejný a soukromý
+    	- 2 klíče - veřejný (sloužící k zašifrování) a soukromý (sloužící k dešifrování)
     	- Příklady asymetrických algoritmů: RSA, Lizard, ECC
 
 ## Kódování
-- Přepsání dat do jiné podoby pomocí vybraného algoritmu
-- Při kódování nepotřebujete zadávat žádný klíč -> je velmi jednoduché zjistit původní obsah
-- Text "SSPS" zakódovaný pomocí algoritmu Base64:
+- Reprezentace dat dle předem stanoveného kódu
+- Při kódování není zadáván žádný klíč -> velmi jednoduché zjistit původní obsah
+- Text "SSPS" zakódovaný pomocí Base64:
 
 	```
 	U1NQUw==
