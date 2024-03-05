@@ -3,16 +3,16 @@
 ### Co to je kryptografie?
 - Kryptografie je obor, jenž se zabývá šifrováním. V kontextu kybernetické bezpečnosti se využívá k ochraně dat a to tak, že data zašifruje dle vybraného algoritmu.
 ---
-## Šifrování vs Kodovani
+## Šifrování vs Kódování
 - Obojí je transformace dat do jiné podoby, avšak ačkoliv se to tak může zdát, opravdu se nejedná o stejnou věc.
 
 ### Šifrování
-- Pro přeměnu dat je využíván klíč, který dle druhu algoritmu může být bud symetrický nebo asymetrický.
+- Pro přeměnu dat je využíván klíč, který dle druhu algoritmu může být buď symetrický nebo asymetrický.
 	- **Symetrický** -  jeden klíč pro šifrování a dešifrování - příklady symetrických algoritmů: AES, Caesarova šifra, Vigenerova šifra
 	- **Asymetrický** - 2 klíče, veřejný a soukromý - příklady asymetrických algoritmů: RSA, Lizard, ECC
 
 ### Kódování
-- Jedná se o přepsání dat do jiné podoby pomocí vybraného algoritmu. při kódování nepotřebujete zadávat žádný klíč a proto případně velmi jednoduché zjistit, co bylo původním obsahem.
+- Jedná se o přepsání dat do jiné podoby pomocí vybraného algoritmu. Při kódování nepotřebujete zadávat žádný klíč a proto případně velmi jednoduché zjistit, co bylo původním obsahem.
 
 - Takto vypadá text "SSPS" zakódovaný pomocí algoritmu Base64 
 
@@ -30,11 +30,11 @@
 ---
 
 ## Hashování
-- Jednotná přeměna dat dle předem stanoveného algoritmu. Jedná se tvz o “Otisk prstu” pro data. Hash je neměnný a bude vždy stejný. Všechno má svůj vlastní hash. Jde díky němu ověřovat integritu dat. Příklady hashovacích algortimů: MD5, SHA512, Blake2
+- Jednotná přeměna dat dle předem stanoveného algoritmu. Jedná se tvz o “Otisk prstu” pro data. Hash je neměnný a bude vždy stejný. Všechno má svůj vlastní hash. Jde díky němu ověřovat integritu dat. Příklady hashovacích algoritmů: MD5, SHA512, Blake2
 - Hash nelze "dešifrovat", ale lze ho prolomit pomocí takzvaných "rainbow tables", jejichž princip spočívá v tom, že máte dlouhý seznam slov, které zahashujete a výsledný hash porovnáváte s tím, který se snažíte prolomit. Pokud budete mít shodu, tak jste slovo prolomili.
 
 - Příklad hashe MD5: ```769ef95f8741c399409e69b409e7f808```
-- Hash jako takový sám o sobě nelze dešifovat, můžete ho však prolomit pomocí "rainbow tables", o kterých se zmiňuji výše. Nástroj, tuto možnost prolomení pomocí rainbow tables nabízí je je dostupný i ve webovém prostředí je například https://crackstation.net/
+- Hash jako takový sám o sobě nelze dešifovat, můžete ho však prolomit pomocí "rainbow tables", o kterých se zmiňuji výše. Nástroj, tuto možnost prolomení pomocí rainbow tables nabízí je dostupný i ve webovém prostředí je například https://crackstation.net/
 - Při zadání výše zmíněného MD5 hashe zjistíte, že pod hashem se krývá slovo "SSPS".
 
 
