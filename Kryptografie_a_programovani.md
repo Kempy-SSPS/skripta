@@ -131,3 +131,29 @@ while (true) //Program se bude stále opakovat
     }
 }
 ```
+- **Metody**
+- Metoda je kus kódu, který lze využívat opakovaně, takže zjednodušeně řečeno nemusím psát furt ten stejný kód dokola, mohu pouze vyvolat metodu.
+- Nyní si zkusíme napsat stejný zdravící program jako víše, ale s využitím metod
+```
+using System;
+
+namespace Zdravic
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Zadej své jméno: ");
+            string name = Console.ReadLine();
+            Pozdrav(name);
+            Console.ReadKey();
+        }
+
+        static void Pozdrav(string jmeno)
+        {
+            Console.WriteLine("Ahoj " + jmeno);
+        }
+    }
+}
+
+```
