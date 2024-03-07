@@ -131,6 +131,16 @@ while (true) //Program se bude stále opakovat
     }
 }
 ```
+- **For loop**
+- For loop umožnuje opakovat stejnou část kodu. Počet opakování je takový, jaký si naprogramujete.
+- Nyní si napíšeme jednoduchý program, který vypíše 10 čísel od 0-9
+  
+```
+for (int i = 0; i < 10; i++)
+            {
+            Console.WriteLine(i);
+            }
+```
 - **Metody**
 - Metoda je kus kódu, který lze využívat opakovaně, takže zjednodušeně řečeno nemusím psát furt ten stejný kód dokola, mohu pouze vyvolat metodu.
 - Nyní si zkusíme napsat stejný zdravící program jako víše, ale s využitím metod
