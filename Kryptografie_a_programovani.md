@@ -45,54 +45,255 @@
 
 
 # Programování
-- **Algoritmizace** - sadu pokynů, kterými se program řídí
+## Algoritmizace
+- sadu pokynů, kterými se program řídí
 - Bez schopnosti tvorby algoritmů nemůžeme napsat kvalitní kód.
 - Jednoduchý algoritmus napsaný v pseudokódu:
-```python
-Vstup: heslo
-Pokud heslo == 1234:
-    Vypiš "Správné heslo"
-Jinak:
-    Vypiš "Špatné heslo"
-```
+    ```python
+    Vstup: heslo
+    Pokud heslo == 1234:
+        Vypiš "Správné heslo"
+    Jinak:
+        Vypiš "Špatné heslo"
+    ```
 
-- **Datové typy** - každý programovací jazyk má v sobě zabudované základní datové typy, mezi nejzákladnější patří:
-
-	int - celá čísla
-
-	double - desetinná čísla
-
-	string - textové řetězce
-
-	char - jeden znak
-
-	bool - true/false
-
+## Datové typy
+- každý programovací jazyk má v sobě zabudované základní datové typy
+- nejzákladnější datové typy:
+	
+    ```
+    int - celá čísla
+	
+    double - desetinná čísla
+	
+    string - textové řetězce
+	
+    char - jeden znak
+	
+    bool - true/false
+    ```
+## Syntaxe
 - **Syntaxe** - sada pravidel, při jejímž porušení nebude program fungovat (např. v C# vše musí končit ";")
-- Jednoduchý příkaz na vypsání textu do konzole v C#:
+- Jednoduchý kód pro vypsání textu do konzole 
+  - v jazyce Python
+  
+    ```python
+    print("Hello, World!") 
+    ```
+  
+  - v jazyce C#
+  
+    ```c#
+    Console.WriteLine("Hello world");
+    ```
 
-	```c#
-	Console.WriteLine("Hello world");
-	```
+## Komentáře
 
-- Nyní si zkusíme vytvořit velmi jednoduchý C# program, který bude zdravit uživatele
-	 - **//** = V C# značí komentář
+- Část kódu, která se nevykonává, ale slouží k vysvětlení kódu, jeho zpřehlednění, či k zapsání poznámek (např. TODO)
+- Komentáře v Pythonu
 
-```c#
-Console.WriteLine("Zadej své jméno: "); //Požádá uživatele o zadání jména
-string name = Console.ReadLine(); //Načte jméno do proměnné name
-Console.WriteLine("Ahoj " + name); //Napíše "Ahoj " a obsah proměnné name
-```
+    ```python
+    # Toto je   komentář
+
+    """
+    Toto je komentář
+    na více řádků
+    """
+    ```
+
+- Komentáře v C#
+
+    ```c#   
+    // Toto je komentář
+    
+    /*
+    Toto je komentář
+    na více řádků
+    */
+    ```
+
+- Jednoduchý program, který bude zdravit uživatele
+  - v jazyce Python
+  
+    ```python
+    name = input("Zadej své jméno: ")
+    print("Ahoj " + name)
+    ```
+  
+  - v jazyce C#
+
+    ```c#
+    Console.WriteLine("Zadej své jméno: "); //Požádá uživatele o zadání jména
+    string name = Console.ReadLine(); //Načte jméno do proměnné name
+    Console.WriteLine("Ahoj " + name); //Napíše "Ahoj " a obsah proměnné name
+    ```
+
+## Podmínky (if/else statements)
+- Umožňují vykonat část kódu, pokud je splněna určitá podmínka
+- Příklad if/else statementu
+  - v jazyce Python
+
+    ```python
+    # if, else if, else
+    age = 18
+    if age >= 18:
+        print("Jsi dospělý")
+    else if age > 65:
+        print("Jsi důchodce")
+    else:
+        print("Jsi dítě")
+    ```
+
+  - v jazyce C#
+
+    ```c#
+    int age = 18;
+    if (age >= 18)
+    {
+        Console.WriteLine("Jsi dospělý");
+    }
+    else if (age > 65)
+    {
+        Console.WriteLine("Jsi důchodce");
+    }
+    else
+    {
+        Console.WriteLine("Jsi dítě");
+    }
+    ```
+
+## Cykly (for/while loops)
+### For loop
+- Umožnuje opakovat stejnou část kodu po stanovenou dobu
+- Příklad for loopu
+  - v jazyce Python
+
+    ```python
+    for i in range(10):
+        print(i)
+    ```
+
+    - v jazyce C#
+
+    ```c#
+    for (int i = 0; i < 10; i++)
+    {
+        Console.WriteLine(i);
+    }
+    ```
+
+### While loop
+- Opakuje část kódu, dokud je splněna určitá podmínka
+- Příklad while loopu
+  - v jazyce Python
+
+    ```python
+    i = 0
+    while i < 10:
+        print(i)
+        i += 1
+    ```
+
+    - v jazyce C#
+
+    ```c#
+    int i = 0;
+    while (i < 10)
+    {
+        Console.WriteLine(i);
+        i++;
+    }
+    ```
+
+## Pole (arrays)
+- Umožňuje ukládat více hodnot do jedné proměnné
+- Příklad pole
+  - v jazyce Python
+
+    ```python
+    pole = [1, 2, 3, 4, 5]
+    print(pole[0]) #Vypíše první prvek pole
+    print(pole[3]) #Vypíše čtvrtý prvek pole
+    print(len(pole)) #Vypíše délku pole
+    ```
+
+    - v jazyce C#
+
+    ```c#
+    int[] pole = {1, 2, 3, 4, 5};
+    Console.WriteLine(pole[0]); //Vypíše první prvek pole
+    Console.WriteLine(pole[3]); //Vypíše čtvrtý prvek pole
+    Console.WriteLine(pole.Length); //Vypíše délku pole
+    ```
+
+## Metody/funkce
+- Kus kódu, který lze využívat opakovaně (stačí ji zavolat a ona se vykoná, zavolat ji lze opakovaně)
+- Program pozdravení s využitím metody/funkce
+    - v jazyce Python
+
+    ```python
+    def pozdrav(name):
+        print("Ahoj " + jmeno)
+    
+    print("Zadej své jméno: ")
+    name = input()
+    pozdrav(name)
+    ```
+
+    - v jazyce C#
+
+    ```c#
+    using System;
+
+    namespace Zdravic
+    {
+        internal class Program
+        {
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Zadej své jméno: ");
+                string name = Console.ReadLine();
+                Pozdrav(name);
+                Console.ReadKey();
+            }
+
+            static void Pozdrav(string jmeno)
+            {
+                Console.WriteLine("Ahoj " + jmeno);
+            }
+        }
+    }
+    ```
 
 
-- V Pythonu by stejný program vypadal zase takto:
+## Jednoduchá kalkulačka
+- V jazyce Python
 
 ```python
-name = input("Zadej své jméno: ")
-print("Ahoj " + name)
+while True: #Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
+    print("Kalkulačka V1")
+    print("Chcete sčítat (+) nebo odčítat (-)?")
+    input = input() #Načte uživatelský vstup
+
+    if input == "+": #Pokud je uživatelný vstup roven "+", čísla se budou sčítat
+        numberOne = input("Zadejte první číslo: ")
+        numberTwo = input("Zadejte druhé číslo: ")
+        result = int(numberOne) + int(numberTwo) #Sečte proměnné a výsledek zapíše do proměnné result
+        print("Výsledek součtu čísel je: " + str(result)) #Vypíše výsledek a vrátí se na začátek
+
+    elif input == "-": #Pokud je uživatelný vstup roven "-", čísla se budou odčítat
+        numberOne = input("Zadejte první číslo: ")
+        numberTwo = input("Zadejte druhé číslo: ")
+        result = int(numberOne) - int(numberTwo) #Odečte proměnné a výsledek zapíše do proměnné result
+        print("Výsledek rozdílu čísel je: " + str(result)) #Vypíše výsledek a vrátí se na začátek
+
+    else:
+        print("Neplatný vstup") #V případe, že by uživatel zadal něco jiného než "+" nebo "-", bude jeho vstup vyhodnocen jako neplatný a vrátí se na začátek
+
 ```
 
-- Toto je velmi jednoduchý program, který pozdraví uživatele. Nyní si vytvoříme kalkulačku ve které si představíme funkci while a if
+- V jazyce C#
+
 
 ```c#
 while (true) //Program se bude stále opakovat
@@ -133,40 +334,4 @@ while (true) //Program se bude stále opakovat
         Console.WriteLine("Neplatný vstup"); //V případe, že by uživatel zadal něco jiného než "+" nebo "-", bude jeho vstup vyhodnocen jako neplatný a vrátí se na začátek
     }
 }
-```
-- **For loop**
-- For loop umožnuje opakovat stejnou část kodu. Počet opakování je takový, jaký si naprogramujete.
-- Nyní si napíšeme jednoduchý program, který vypíše 10 čísel od 0-9
-  
-```
-for (int i = 0; i < 10; i++)
-            {
-            Console.WriteLine(i);
-            }
-```
-- **Metody**
-- Metoda je kus kódu, který lze využívat opakovaně, takže zjednodušeně řečeno nemusím psát furt ten stejný kód dokola, mohu pouze vyvolat metodu.
-- Nyní si zkusíme napsat stejný zdravící program jako víše, ale s využitím metod
-```
-using System;
-
-namespace Zdravic
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Zadej své jméno: ");
-            string name = Console.ReadLine();
-            Pozdrav(name);
-            Console.ReadKey();
-        }
-
-        static void Pozdrav(string jmeno)
-        {
-            Console.WriteLine("Ahoj " + jmeno);
-        }
-    }
-}
-
 ```
