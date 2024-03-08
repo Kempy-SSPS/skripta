@@ -30,23 +30,25 @@
     - https://www.dcode.fr/en
 
 
-## Hashování
-- Jednotná přeměna dat dle předem stanoveného algoritmu
-- Jedná se tzv. o “Otisk prstu” dat
-- Neměnný a uinikátní
-- Příklady hashovacích algortimů: MD5, SHA512, Blake2
-- Příklady využití: TODO
-- Nelze "dešifrovat", ale lze ho prolomit pomocí takzvaných "rainbow tables", jejichž princip spočívá v tom, že máte dlouhý seznam slov, které zahashujete a výsledný hash porovnáváte s tím, který se snažíte prolomit. Pokud budete mít shodu, tak jste slovo prolomili.
-
-- Příklad hashe MD5: ```769ef95f8741c399409e69b409e7f808```
-- Hash jako takový sám o sobě nelze dešifovat, můžete ho však prolomit pomocí "rainbow tables", o kterých se zmiňuji výše. Nástroj, tuto možnost prolomení pomocí rainbow tables nabízí je je dostupný i ve webovém prostředí je například https://crackstation.net/
-- Při zadání výše zmíněného MD5 hashe zjistíte, že pod hashem se krývá slovo "SSPS".
+## Hashovací funkce
+- Jednosměrná matematická funkce
+- Hash
+  - Výsledek hashovací funkce po zadání vstupních dat
+  - Jedná se tzv. o “Otisk prstu” dat
+  - Neměnný a unikátní (může se však stát tzv. kolize)
+  - Kolize - jeden hash náleží dvěma různým vstupním datům (stává se zřídka)
+- Příklady hashovacích funkcí: md5, SHA512, Blake2
+- Příklady využití: integrita dat, zabezpečení hesel
+- Nelze dešifrovat, ale lze ho prolomit pomocí takzvaných "rainbow tables" (dlouhý seznam slov, která se zahashují a výsledný hash je porovnán)
+- Příklad hashe MD5: ```769ef95f8741c399409e69b409e7f808``` (vstupní data - slovo "SSPS" )
+- Nástroje na prolomení (cracknutí) hashů: Hashcat, JohnTheRipper, https://crackstation.net/
 
 
 # Programování
-- **Algoritmizace** - velmi důležitá v programování je algoritmizace. Jedná se o sadu pokynů, kterými se program řídí. Bez schopnosti tvorby algoritmů nemůžeme napsat kvalitní kód.
-- jednoduchý algoritmus napsaný v "pseudokódu":
-```bash
+- **Algoritmizace** - sadu pokynů, kterými se program řídí
+- Bez schopnosti tvorby algoritmů nemůžeme napsat kvalitní kód.
+- Jednoduchý algoritmus napsaný v pseudokódu:
+```python
 Vstup: heslo
 Pokud heslo == 1234:
     Vypiš "Správné heslo"
@@ -66,7 +68,8 @@ Jinak:
 
 	bool - true/false
 
-- **Syntaxe** - sada pravidel, při jejímž porušení nebude program fungovat. Například v programovacím jazyce C# vše musí končit ";" takže jednoduchý příkaz na vypsání textu do konzole bude vypadat takto:
+- **Syntaxe** - sada pravidel, při jejímž porušení nebude program fungovat (např. v C# vše musí končit ";")
+- Jednoduchý příkaz na vypsání textu do konzole v C#:
 
 	```c#
 	Console.WriteLine("Hello world");
