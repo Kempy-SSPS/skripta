@@ -8,7 +8,7 @@
 
 ## Šifrování
 - Pro přeměnu dat využíván klíč
-- Klíč dle druhu algoritmu buď symetrický nebo asymetrický
+- Klíč je dle druhu algoritmu buď symetrický nebo asymetrický
 	- **Symetrický**
     	- Jeden klíč pro šifrování a dešifrování
     	- Příklady symetrických algoritmů: AES, Caesarova šifra, Vigenèrova šifra
