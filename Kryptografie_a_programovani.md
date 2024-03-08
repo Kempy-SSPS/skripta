@@ -2,7 +2,7 @@
 - Obor zabývající se šifrováním
 - V kontextu kybernetické bezpečnosti využívána k ochraně dat - zašifrování dle vybraného algoritmu
 
-## Šifrování vs Kodovani
+## Šifrování vs Kódování
 - Oboje transformace dat do jiné podoby
 - Ačkoliv se to tak může zdát, opravdu se nejedná o stejnou věc
 
