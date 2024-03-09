@@ -387,15 +387,15 @@
 while True: #Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
     print("Kalkulačka V1")
     print("Chcete sčítat (+) nebo odčítat (-)?")
-    input = input() #Načte uživatelský vstup
+    inputString = input() #Načte uživatelský vstup
 
-    if input == "+": #Pokud je uživatelný vstup roven "+", čísla se budou sčítat
+    if inputString == "+": #Pokud je uživatelný vstup roven "+", čísla se budou sčítat
         numberOne = input("Zadejte první číslo: ")
         numberTwo = input("Zadejte druhé číslo: ")
         result = int(numberOne) + int(numberTwo) #Sečte proměnné a výsledek zapíše do proměnné result
         print("Výsledek součtu čísel je: " + str(result)) #Vypíše výsledek a vrátí se na začátek
 
-    elif input == "-": #Pokud je uživatelný vstup roven "-", čísla se budou odčítat
+    elif inputString == "-": #Pokud je uživatelný vstup roven "-", čísla se budou odčítat
         numberOne = input("Zadejte první číslo: ")
         numberTwo = input("Zadejte druhé číslo: ")
         result = int(numberOne) - int(numberTwo) #Odečte proměnné a výsledek zapíše do proměnné result
