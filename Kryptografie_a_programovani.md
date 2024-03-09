@@ -171,31 +171,31 @@
   - v jazyce Python
 
     ```python
-    # if, else if, else
+    # if, elif, else
     age = 18
-    if age >= 18:
-        print("Jsi dospělý")
-    elif age > 65:
+    if age < 18:
+        print("Jsi dítě")
+    elif age >= 65:
         print("Jsi důchodce")
     else:
-        print("Jsi dítě")
+        print("Jsi dospělý")
     ```
 
   - v jazyce JavaScript
     
     ```javascript
     var age = 18;
-    if (age >= 18)
+    if (age < 18)
     {
-        console.log("Jsi dospělý");
+        console.log("Jsi dítě");
     }
-    else if (age > 65)
+    else if (age >= 65)
     {
         console.log("Jsi důchodce");
     }
     else
     {
-        console.log("Jsi dítě");
+        console.log("Jsi dospělý");
     }
     ```
 
@@ -207,17 +207,17 @@
     int main()
     {
         int age = 18;
-        if (age >= 18)
+        if (age < 18)
         {
-            printf("Jsi dospělý");
+            printf("Jsi dítě");
         }
-        else if (age > 65)
+        else if (age >= 65)
         {
             printf("Jsi důchodce");
         }
         else
         {
-            printf("Jsi dítě");
+            printf("Jsi dospělý");
         }
         return 0;
     }
