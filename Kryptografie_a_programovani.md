@@ -175,7 +175,7 @@
     age = 18
     if age >= 18:
         print("Jsi dospělý")
-    else if age > 65:
+    elif age > 65:
         print("Jsi důchodce")
     else:
         print("Jsi dítě")
