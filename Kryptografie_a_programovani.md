@@ -80,12 +80,6 @@
     ```python
     print("Hello, World!") 
     ```
-  
-  - v jazyce JavaScript
-    
-    ```javascript
-    console.log("Hello, World!");
-    ```
 
   - v jazyce C
   
@@ -113,17 +107,6 @@
     """
     ```
 
-- Komentáře v JavaScriptu
-
-    ```javascript
-    // Toto je komentář
-
-    /*
-    Toto je komentář
-    na více řádků
-    */
-    ```
-
 - Komentáře v C
 
     ```c 
@@ -141,13 +124,6 @@
     ```python
     name = input("Zadej své jméno: ")
     print("Ahoj " + name)
-    ```
-  
-  - v jazyce JavaScript
-    
-    ```javascript
-    var name = prompt("Zadej své jméno: ");
-    console.log("Ahoj " + name);
     ```
     
   - v jazyce C
@@ -179,24 +155,6 @@
         print("Jsi důchodce")
     else:
         print("Jsi dospělý")
-    ```
-
-  - v jazyce JavaScript
-    
-    ```javascript
-    var age = 18;
-    if (age < 18)
-    {
-        console.log("Jsi dítě");
-    }
-    else if (age >= 65)
-    {
-        console.log("Jsi důchodce");
-    }
-    else
-    {
-        console.log("Jsi dospělý");
-    }
     ```
 
   - v jazyce C
@@ -234,15 +192,6 @@
         print(i)
     ```
 
-  - v jazyce JavaScript
-  
-    ```javascript
-    for (let i = 0; i < 10; i++)
-    {
-        console.log(i);
-    }
-    ```
-
   - v jazyce C
 
     ```c
@@ -268,17 +217,6 @@
     while i < 10:
         print(i)
         i += 1
-    ```
-
-    - v jazyce JavaScript
-
-    ```javascript
-    let i = 0;
-    while (i < 10)
-    {
-        console.log(i);
-        i++;
-    }
     ```
 
     - v jazyce C
@@ -310,15 +248,6 @@
     print(len(pole)) #Vypíše délku pole
     ```
 
-    - v jazyce JavaScript
-    
-    ```javascript
-    let pole = [1, 2, 3, 4, 5];
-    console.log(pole[0]); //Vypíše první prvek pole
-    console.log(pole[3]); //Vypíše čtvrtý prvek pole
-    console.log(pole.length); //Vypíše délku pole
-    ```
-
     - v jazyce C
 
     ```c
@@ -340,24 +269,12 @@
     - v jazyce Python
 
     ```python
-    def pozdrav(jmeno):
-        print("Ahoj " + jmeno)
+    def pozdrav(name):
+        print("Ahoj " + name)
     
     print("Zadej své jméno: ")
     name = input()
     pozdrav(name)
-    ```
-
-    - v jazyce JavaScript
-
-    ```javascript
-    function pozdrav(jmeno)
-    {
-        console.log("Ahoj " + jmeno);
-    }
-    console.log("Zadej své jméno: ");
-    var name = prompt();
-    pozdrav(name);
     ```
 
     - v jazyce C
@@ -365,9 +282,9 @@
     ```c
     #include <stdio.h>
 
-    void pozdrav(char jmeno[])
+    void pozdrav(char name[])
     {
-        printf("Ahoj %s\n", jmeno);
+        printf("Hi %s\n", name);
     }
 
     int main()
@@ -405,29 +322,6 @@ while True: #Program se bude stále opakovat- Jednoduchá kalkulačka za použit
 
 ```
 
-- V jazyce Javascript
-
-```javascript
-while (true) { //Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
-    console.log("Kalkulačka V1");
-    var input = prompt("Chcete sčítat (+) nebo odčítat (-)?"); //Načte uživatelský vstup
-
-    if (input == "+") { //Pokud je uživatelný vstup roven "+", čísla se budou sčítat
-        var numberOne = prompt("Zadejte první číslo: ");
-        var numberTwo = prompt("Zadejte druhé číslo: ");
-        var result = parseInt(numberOne) + parseInt(numberTwo); //Sečte proměnné a výsledek zapíše do proměnné result
-        console.log("Výsledek součtu čísel je: " + result); //Vypíše výsledek a vrátí se na začátek
-    } else if (input == "-") { //Pokud je uživatelný vstup roven "-", čísla se budou odčítat
-        var numberOne = prompt("Zadejte první číslo: ");
-        var numberTwo = prompt("Zadejte druhé číslo: ");
-        var result = parseInt(numberOne) - parseInt(numberTwo); //Odečte proměnné a výsledek zapíše do proměnné result
-        console.log("Výsledek rozdílu čísel je: " + result); //Vypíše výsledek a vrátí se na začátek
-    } else {
-        console.log("Neplatný vstup"); //V případe, že by uživatel zadal něco jiného než "+" nebo "-", bude jeho vstup vyhodnocen jako neplatný a vrátí se na začátek
-    }
-}
-```
-
 - V jazyce C
 
 ```c
@@ -437,32 +331,38 @@ int main()
 {
     while (1) //Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
     {
-        printf("Kalkulačka V1\n");
-        printf("Chcete sčítat (+) nebo odčítat (-)?\n");
-        char input;
-        scanf("%c", &input); //Načte uživatelský vstup
+        char operation;
+        float numberOne;
+        float numberTwo;
 
-        if (input == '+') //Pokud je uživatelný vstup roven "+", čísla se budou sčítat
+        printf("Zadejte operaci (+, -, *, /): ");
+        scanf(" %c", &operation);
+        printf("Zadejte první číslo: ");
+        scanf("%f", &numberOne);
+        printf("Zadejte druhé číslo: ");
+        scanf("%f", &numberTwo);
+
+        float result;
+
+        if (operation == '+') //Pokud je uživatelný vstup roven "+", čísla se budou sčítat
         {
-            int numberOne;
-            int numberTwo;
-            printf("Zadejte první číslo: ");
-            scanf("%d", &numberOne);
-            printf("Zadejte druhé číslo: ");
-            scanf("%d", &numberTwo);
-            int result = numberOne + numberTwo; //Sečte proměnné a výsledek zapíše do proměnné result
-            printf("Výsledek součtu čísel je: %d\n", result); //Vypíše výsledek a vrátí se na začátek
+            result = numberOne + numberTwo; //Sečte proměnné a výsledek zapíše do proměnné result
+            printf("Výsledek součtu čísel je: %f\n", result);
         }
-        else if (input == '-') //Pokud je uživatelný vstup roven "-", čísla se budou odčítat
+        else if (operation == '-') //Pokud je uživatelný vstup roven "-", čísla se budou odčítat
         {
-            int numberOne;
-            int numberTwo;
-            printf("Zadejte první číslo: ");
-            scanf("%d", &numberOne);
-            printf("Zadejte druhé číslo: ");
-            scanf("%d", &numberTwo);
-            int result = numberOne - numberTwo; //Odečte proměnné a výsledek zapíše do proměnné result
-            printf("Výsledek rozdílu čísel je: %d\n", result); //Vypíše výsledek a vrátí se na začátek
+            result = numberOne - numberTwo; //Odečte proměnné a výsledek zapíše do proměnné result
+            printf("Výsledek rozdílu čísel je: %f\n", result); //Vypíše výsledek a vrátí se na začátek
+        }
+        else if (operation == '*')
+        {
+            result = numberOne * numberTwo; //Vynásobí proměnné a výsledek zapíše do proměnné result
+            printf("Výsledek rozdílu čísel je: %f\n", result); //Vypíše výsledek a vrátí se na začátek
+        }
+        else if (operation == '/')
+        {
+            result = numberOne / numberTwo; //Vydělí proměnné a výsledek zapíše do proměnné result
+            printf("Výsledek rozdílu čísel je: %f\n", result); //Vypíše výsledek a vrátí se na začátek
         }
         else
         {
