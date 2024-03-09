@@ -2,13 +2,13 @@
 - Obor zabývající se šifrováním
 - V kontextu kybernetické bezpečnosti využívána k ochraně dat - zašifrování dle vybraného algoritmu
 
-## Šifrování vs Kódování
+## Šifrování vs kódovani
 - Oboje transformace dat do jiné podoby
 - Ačkoliv se to tak může zdát, opravdu se nejedná o stejnou věc
 
 ## Šifrování
 - Pro přeměnu dat využíván klíč
-- Klíč je dle druhu algoritmu buď symetrický nebo asymetrický
+- Klíč dle druhu algoritmu buď symetrický nebo asymetrický
 	- **Symetrický**
     	- Jeden klíč pro šifrování a dešifrování
     	- Příklady symetrických algoritmů: AES, Caesarova šifra, Vigenèrova šifra
@@ -81,10 +81,22 @@
     print("Hello, World!") 
     ```
   
-  - v jazyce C#
+  - v jazyce JavaScript
+    
+    ```javascript
+    console.log("Hello, World!");
+    ```
+
+  - v jazyce C
   
-    ```c#
-    Console.WriteLine("Hello world");
+    ```c
+    #include <stdio.h>
+
+    int main()
+    {
+        printf("Hello, World!");
+        return 0;
+    }
     ```
 
 ## Komentáře
@@ -101,11 +113,22 @@
     """
     ```
 
-- Komentáře v C#
+- Komentáře v JavaScriptu
 
-    ```c#   
+    ```javascript
     // Toto je komentář
-    
+
+    /*
+    Toto je komentář
+    na více řádků
+    */
+    ```
+
+- Komentáře v C
+
+    ```c 
+    // Toto je komentář
+
     /*
     Toto je komentář
     na více řádků
@@ -120,12 +143,26 @@
     print("Ahoj " + name)
     ```
   
-  - v jazyce C#
+  - v jazyce JavaScript
+    
+    ```javascript
+    var name = prompt("Zadej své jméno: ");
+    console.log("Ahoj " + name);
+    ```
+    
+  - v jazyce C
 
-    ```c#
-    Console.WriteLine("Zadej své jméno: "); //Požádá uživatele o zadání jména
-    string name = Console.ReadLine(); //Načte jméno do proměnné name
-    Console.WriteLine("Ahoj " + name); //Napíše "Ahoj " a obsah proměnné name
+    ```c
+    #include <stdio.h>
+
+    int main()
+    {
+        char name[50];
+        printf("Zadej své jméno: ");
+        scanf("%s", name);
+        printf("Ahoj %s", name);
+        return 0;
+    }
     ```
 
 ## Podmínky (if/else statements)
@@ -144,21 +181,45 @@
         print("Jsi dítě")
     ```
 
-  - v jazyce C#
-
-    ```c#
-    int age = 18;
+  - v jazyce JavaScript
+    
+    ```javascript
+    var age = 18;
     if (age >= 18)
     {
-        Console.WriteLine("Jsi dospělý");
+        console.log("Jsi dospělý");
     }
     else if (age > 65)
     {
-        Console.WriteLine("Jsi důchodce");
+        console.log("Jsi důchodce");
     }
     else
     {
-        Console.WriteLine("Jsi dítě");
+        console.log("Jsi dítě");
+    }
+    ```
+
+  - v jazyce C
+
+    ```c
+    #include <stdio.h>
+
+    int main()
+    {
+        int age = 18;
+        if (age >= 18)
+        {
+            printf("Jsi dospělý");
+        }
+        else if (age > 65)
+        {
+            printf("Jsi důchodce");
+        }
+        else
+        {
+            printf("Jsi dítě");
+        }
+        return 0;
     }
     ```
 
@@ -173,12 +234,27 @@
         print(i)
     ```
 
-    - v jazyce C#
-
-    ```c#
-    for (int i = 0; i < 10; i++)
+  - v jazyce JavaScript
+  
+    ```javascript
+    for (let i = 0; i < 10; i++)
     {
-        Console.WriteLine(i);
+        console.log(i);
+    }
+    ```
+
+  - v jazyce C
+
+    ```c
+    #include <stdio.h>
+
+    int main()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            printf("%d\n", i);
+        }
+        return 0;
     }
     ```
 
@@ -194,14 +270,31 @@
         i += 1
     ```
 
-    - v jazyce C#
+    - v jazyce JavaScript
 
-    ```c#
-    int i = 0;
+    ```javascript
+    let i = 0;
     while (i < 10)
     {
-        Console.WriteLine(i);
+        console.log(i);
         i++;
+    }
+    ```
+
+    - v jazyce C
+
+    ```c
+    #include <stdio.h>
+
+    int main()
+    {
+        int i = 0;
+        while (i < 10)
+        {
+            printf("%d\n", i);
+            i++;
+        }
+        return 0;
     }
     ```
 
@@ -217,13 +310,28 @@
     print(len(pole)) #Vypíše délku pole
     ```
 
-    - v jazyce C#
+    - v jazyce JavaScript
+    
+    ```javascript
+    let pole = [1, 2, 3, 4, 5];
+    console.log(pole[0]); //Vypíše první prvek pole
+    console.log(pole[3]); //Vypíše čtvrtý prvek pole
+    console.log(pole.length); //Vypíše délku pole
+    ```
 
-    ```c#
-    int[] pole = {1, 2, 3, 4, 5};
-    Console.WriteLine(pole[0]); //Vypíše první prvek pole
-    Console.WriteLine(pole[3]); //Vypíše čtvrtý prvek pole
-    Console.WriteLine(pole.Length); //Vypíše délku pole
+    - v jazyce C
+
+    ```c
+    #include <stdio.h>
+
+    int main()
+    {
+        int pole[] = {1, 2, 3, 4, 5};
+        printf("%d\n", pole[0]); //Vypíše první prvek pole
+        printf("%d\n", pole[3]); //Vypíše čtvrtý prvek pole
+        printf("%d\n", sizeof(pole) / sizeof(pole[0])); //Vypíše délku pole
+        return 0;
+    }
     ```
 
 ## Metody/funkce
@@ -240,31 +348,37 @@
     pozdrav(name)
     ```
 
-    - v jazyce C#
+    - v jazyce JavaScript
 
-    ```c#
-    using System;
-
-    namespace Zdravic
+    ```javascript
+    function pozdrav(jmeno)
     {
-        internal class Program
-        {
-            static void Main(string[] args)
-            {
-                Console.WriteLine("Zadej své jméno: ");
-                string name = Console.ReadLine();
-                Pozdrav(name);
-                Console.ReadKey();
-            }
-
-            static void Pozdrav(string jmeno)
-            {
-                Console.WriteLine("Ahoj " + jmeno);
-            }
-        }
+        console.log("Ahoj " + jmeno);
     }
+    console.log("Zadej své jméno: ");
+    var name = prompt();
+    pozdrav(name);
     ```
 
+    - v jazyce C
+
+    ```c
+    #include <stdio.h>
+
+    void pozdrav(char jmeno[])
+    {
+        printf("Ahoj %s\n", jmeno);
+    }
+
+    int main()
+    {
+        char name[50];
+        printf("Zadej své jméno: ");
+        scanf("%s", name);
+        pozdrav(name);
+        return 0;
+    }
+    ```
 
 ## Jednoduchá kalkulačka
 - V jazyce Python
@@ -292,46 +406,70 @@ while True: #Program se bude stále opakovat- Jednoduchá kalkulačka za použit
 
 ```
 
-- V jazyce C#
+- V jazyce Javascript
 
+```javascript
+while (true) { //Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
+    console.log("Kalkulačka V1");
+    console.log("Chcete sčítat (+) nebo odčítat (-)?");
+    var input = prompt(); //Načte uživatelský vstup
 
-```c#
-while (true) //Program se bude stále opakovat
+    if (input == "+") { //Pokud je uživatelný vstup roven "+", čísla se budou sčítat
+        var numberOne = prompt("Zadejte první číslo: ");
+        var numberTwo = prompt("Zadejte druhé číslo: ");
+        var result = parseInt(numberOne) + parseInt(numberTwo); //Sečte proměnné a výsledek zapíše do proměnné result
+        console.log("Výsledek součtu čísel je: " + result); //Vypíše výsledek a vrátí se na začátek
+    } else if (input == "-") { //Pokud je uživatelný vstup roven "-", čísla se budou odčítat
+        var numberOne = prompt("Zadejte první číslo: ");
+        var numberTwo = prompt("Zadejte druhé číslo: ");
+        var result = parseInt(numberOne) - parseInt(numberTwo); //Odečte proměnné a výsledek zapíše do proměnné result
+        console.log("Výsledek rozdílu čísel je: " + result); //Vypíše výsledek a vrátí se na začátek
+    } else {
+        console.log("Neplatný vstup"); //V případe, že by uživatel zadal něco jiného než "+" nebo "-", bude jeho vstup vyhodnocen jako neplatný a vrátí se na začátek
+    }
+}
+```
+
+- V jazyce C
+
+```c
+#include <stdio.h>
+
+int main()
 {
-    Console.WriteLine("Kalkulačka V1");
-    Console.WriteLine("Chcete sčítat (+) nebo odčítat (-)?");
-    string input = Console.ReadLine(); //Načte uživatelský vstup
-
-    if (input == "+") //Pokud je uživatelný vstup roven "+", čísla se budou sčítat
+    while (1) //Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
     {
-        Console.WriteLine("Zadejte první číslo: ");
-        string numberOne = Console.ReadLine();
-        Console.WriteLine("Zadejte druhé číslo: ");
-        string numberTwo = Console.ReadLine();
+        printf("Kalkulačka V1\n");
+        printf("Chcete sčítat (+) nebo odčítat (-)?\n");
+        char input;
+        scanf("%c", &input); //Načte uživatelský vstup
 
-        double numberOneParsed = Convert.ToDouble(numberOne); //V případě, že bychom proměnou nechali jako datový typ string, tak by výsledkem součtu čísel například 1 + 1 bylo "11". Proto vytvoříme novou proměnou, která bude obsahovat hodnotu jako uživatelský vstup, ale bude typu double
-        double numberTwoParsed = Convert.ToDouble(numberTwo);
-
-        double result = numberOneParsed + numberTwoParsed; //Sečte proměnné a výsledek zapíše do proměnné result
-        Console.WriteLine("Výsledek součtu čísel je: " + result); //Vypíše výsledek a vrátí se na začátek
-
-    }
-    else if (input == "-") //Pokud je uživatelný vstup roven "-", čísla se budou odčítat
-    {
-        Console.WriteLine("Zadejte první číslo: ");
-        string numberOne = Console.ReadLine();
-        Console.WriteLine("Zadejte druhé číslo: ");
-        string numberTwo = Console.ReadLine();
-
-        double numberOneParsed = Convert.ToDouble(numberOne);
-        double numberTwoParsed = Convert.ToDouble(numberTwo);
-
-        double result = numberOneParsed - numberTwoParsed; //Odečte proměnné a výsledek zapíše do proměnné result
-        Console.WriteLine("Výsledek rozdílu čísel je: " + result); 
-    }
-    else
-    {
-        Console.WriteLine("Neplatný vstup"); //V případe, že by uživatel zadal něco jiného než "+" nebo "-", bude jeho vstup vyhodnocen jako neplatný a vrátí se na začátek
+        if (input == '+') //Pokud je uživatelný vstup roven "+", čísla se budou sčítat
+        {
+            int numberOne;
+            int numberTwo;
+            printf("Zadejte první číslo: ");
+            scanf("%d", &numberOne);
+            printf("Zadejte druhé číslo: ");
+            scanf("%d", &numberTwo);
+            int result = numberOne + numberTwo; //Sečte proměnné a výsledek zapíše do proměnné result
+            printf("Výsledek součtu čísel je: %d\n", result); //Vypíše výsledek a vrátí se na začátek
+        }
+        else if (input == '-') //Pokud je uživatelný vstup roven "-", čísla se budou odčítat
+        {
+            int numberOne;
+            int numberTwo;
+            printf("Zadejte první číslo: ");
+            scanf("%d", &numberOne);
+            printf("Zadejte druhé číslo: ");
+            scanf("%d", &numberTwo);
+            int result = numberOne - numberTwo; //Odečte proměnné a výsledek zapíše do proměnné result
+            printf("Výsledek rozdílu čísel je: %d\n", result); //Vypíše výsledek a vrátí se na začátek
+        }
+        else
+        {
+            printf("Neplatný vstup\n"); //V případe, že by uživatel zadal něco jiného než "+" nebo "-", bude jeho vstup vyhodnocen jako neplatný a vrátí se na začátek
+        }
     }
 }
 ```
