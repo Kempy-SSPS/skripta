@@ -386,8 +386,7 @@
 ```python
 while True: #Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
     print("Kalkulačka V1")
-    print("Chcete sčítat (+) nebo odčítat (-)?")
-    inputString = input() #Načte uživatelský vstup
+    inputString = input("Chcete sčítat (+) nebo odčítat (-)?") #Načte uživatelský vstup
 
     if inputString == "+": #Pokud je uživatelný vstup roven "+", čísla se budou sčítat
         numberOne = input("Zadejte první číslo: ")
@@ -411,8 +410,7 @@ while True: #Program se bude stále opakovat- Jednoduchá kalkulačka za použit
 ```javascript
 while (true) { //Program se bude stále opakovat- Jednoduchá kalkulačka za použití while loopu a if/else statementů
     console.log("Kalkulačka V1");
-    console.log("Chcete sčítat (+) nebo odčítat (-)?");
-    var input = prompt(); //Načte uživatelský vstup
+    var input = prompt("Chcete sčítat (+) nebo odčítat (-)?"); //Načte uživatelský vstup
 
     if (input == "+") { //Pokud je uživatelný vstup roven "+", čísla se budou sčítat
         var numberOne = prompt("Zadejte první číslo: ");
