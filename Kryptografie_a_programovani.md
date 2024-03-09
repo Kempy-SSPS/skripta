@@ -340,7 +340,7 @@
     - v jazyce Python
 
     ```python
-    def pozdrav(name):
+    def pozdrav(jmeno):
         print("Ahoj " + jmeno)
     
     print("Zadej své jméno: ")
