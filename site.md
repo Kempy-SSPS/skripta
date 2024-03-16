@@ -201,3 +201,11 @@ přijmout)
 
 - ```ip a``` (na Linuxu) nebo ```ipconfig``` (na Windows)
   - získání informací o konfiguraci sítě a síťových adaptérech
+  
+# Nástroje
+## Analýza síťového provozu
+- Nástroje:
+  - Wireshark
+  - tcpdump
+## Skenování sítě
+- Nástroj nmap
