@@ -80,7 +80,7 @@ server apod.)
 ## Výchozí brána
 - adresa routeru, přes který jde síťový provoz mimo LAN (síťový provoz do dalších sítí)
 
-## Statická vs dynamická analýza
+## Statická vs dynamická adresace
 - statická adresace
   - manuálně všem zařízením přiřadit IP adresu a masku sítě
   - náročné až nemožné ve velkých firmách a institucích
