@@ -1,6 +1,6 @@
 # Základy počítačových sítí
 ## Koncová zařízení a druhy sítí
-- koncová zařízení = koncová zařízení = zařízení, mezi kterými probíhá síťová komunikace (např. PC,
+- koncová zařízení = zařízení, mezi kterými probíhá síťová komunikace (např. PC,
 server apod.)
 
 - LAN = místní (lokální) síť
@@ -208,4 +208,6 @@ přijmout)
   - Wireshark
   - tcpdump
 ## Skenování sítě
-- Nástroj nmap
+- Nástroj nmap 
+  - VAROVÁNÍ: použití tohoto nástroje na serverech či sítích bez povolení jejich vlastníků/správců je protizákonné
+  - otestovat lze na scanme.nmap.org
