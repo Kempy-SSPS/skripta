@@ -4,7 +4,7 @@
 - Dále má na starosti správu dostupných prostředků (paměť, disky...) a procesů. 
 - Na jádru se následně staví různé programy a utilitity
 ## GNU
-- Ve většině distribucích jsou k samotnému jádru (kernelu) dodány GNU utility, init systémy (systemd, openrc...), bootloadery (grub, systemd-boot), window servery (xorg, wayland...), desktop environmenty (DE - Gnome, XFCE...), windows managery (WM - Sway, Hyprland...) a programy, které používáme na denní bázi (prohlížec, textový editor, přehrávač hudby a videa...).
+- Ve většině distribucích jsou k samotnému jádru (kernelu) dodány GNU utility, init systémy (systemd, openrc...), bootloadery (grub, systemd-boot), window servery (xorg, wayland...), desktop environmenty (DE - Gnome, XFCE...), window managery (WM - Sway, Hyprland...) a programy, které používáme na denní bázi (prohlížec, textový editor, přehrávač hudby a videa...).
 - Tyto komponenty jde nahradit za jiné, podle Vašeho vkusu a uvážení (- jsou tím, co spolutvoří výsledný operační systém/distribuci, ale nejsou pevně dané)
 
 
